@@ -7,17 +7,17 @@ body {
     background-color: #121212;
     color: #fdfdfd;
     font-family: IBMPlexMono, monospace;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 div {
+    width: 48em;
     margin: auto;
-    max-width: 70ch;
 }
 
 pre {
     margin 0;
-    overflow-x:hidden;
+    font-family: IBMPlexMono, monospace;
 }
 
 a {
@@ -28,10 +28,36 @@ a:hover {
     color: #8160be;
 }
 
+.gr {
+    color: #9d9d9d;
+}
+
 .ma {
     color: #ff005d;
 }
 
 .cy {
     color: #4fe5ff;
+}
+
+@media only screen and (max-width: 50em) {
+    body {
+        font-size: 1.9vw;
+    }
+
+    div {
+        width: auto;
+        margin: 1vw;
+    }
+}
+
+@media only screen and (max-width: 20em) {
+    body {
+        font-size: 1em;
+    }
+
+    div {
+        width: auto;
+        margin: 1vw;
+    }
 }
