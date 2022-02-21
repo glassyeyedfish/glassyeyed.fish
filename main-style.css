@@ -23,3 +23,15 @@ pre {
 a {
     color: #ae81ff;
 }
+
+a:hover {
+    color: #8160be;
+}
+
+.ma {
+    color: #ff005d;
+}
+
+.cy {
+    color: #4fe5ff;
+}
