@@ -28,6 +28,10 @@ a:hover {
     color: #8160be;
 }
 
+.or {
+    color: #ff981f;
+}
+
 .gr {
     color: #9d9d9d;
 }
@@ -39,26 +43,3 @@ a:hover {
 .cy {
     color: #4fe5ff;
 }
-
-@media only screen and (max-width: 50em) {
-    body {
-        font-size: 1.9vw;
-    }
-
-    div {
-        width: auto;
-        margin: 1vw;
-    }
-}
-
-@media only screen and (max-width: 20em) {
-    body {
-        font-size: 1em;
-    }
-
-    div {
-        width: auto;
-        margin: 1vw;
-    }
-}
-
