@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-
-<html lang='en'>
-
-<head>
-    <title>GlassyEyedFish</title>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="main-style.css"/>
-</head>
-
-<body><div><pre>
 +------------------------------------------------------------------------------+
 | ~/index.html                                                                 |
 +------------------------------------------------------------------------------+
@@ -39,74 +28,74 @@
 |                                                            \__/              |
 +------------------------------------------------------------------------------+
  
-<span class=bl>Welcome to my website, the hub of all things me. This page mostly serves as a
+Welcome to my website, the hub of all things me. This page mostly serves as a
 literal index of the rest of the side, but it also serves as a link directory
-and a few other functions.</span>
+and a few other functions.
 
-<span id=000>[<a href=#000>000</a>]</span> <span class=ma>Table of Contents</span>
+[000] Table of Contents
 ================================================================================
 
-<span class=bl>Navigate this pages with the links in the table. To come back to this table
-click the link in the header of any section below.</span>
+Navigate this pages with the links in the table. To come back to this table
+click the link in the header of any section below.
 
-Table of Contents ........................................................ [<a href=#000>000</a>]
-Where to Fine Me ......................................................... [<a href=#001>001</a>]
-Link Directory ........................................................... [<a href=#002>002</a>]
-Projects ................................................................. [<a href=#003>003</a>]
-Banners .................................................................. [<a href=#004>004</a>]
+Table of Contents ........................................................ [000]
+Where to Fine Me ......................................................... [001]
+Link Directory ........................................................... [002]
+Projects ................................................................. [003]
+Banners .................................................................. [004]
 
-<span id=001>[<a href=#000>001</a>]</span> <span class=ma>Where to Find Me</span>
+[001] Where to Find Me
 ================================================================================
 
-* GitHub: <a href=https://github.com/glassyeyedfish>https://github.com/glassyeyedfish/</a>
-* Itch: <a href=https://glassyeyedfish.itch.io>https://glassyeyedfish.itch.io/</a>
+* GitHub: https://github.com/glassyeyedfish/
+* Itch: https://glassyeyedfish.itch.io/
 
-<span id=002>[<a href=#000>002</a>]</span> <span class=ma>Link Directory</span>
+[002] Link Directory
 ================================================================================
 
-<span class=cy>SADGRL.ONLINE</span> : <a href=https://sadgrl.online/>https://sadgrl.online/</a>
-    <span class=bl>The site which inspited me to make this site in the first place.</span>
+SADGRL.ONLINE : https://sadgrl.online/
+    The site which inspited me to make this site in the first place.
 
-<span class=cy>Kiss Linux</span> : <a href=https://kisslinux.org/>https://kisslinux.org/</a>
-    <span class=bl>The website which inspired the design of mine.</span>
+Kiss Linux : https://kisslinux.org/
+    The website which inspired the design of mine.
 
-<span class=cy>Chad's Guide</span> : <a href=https://landchad.net/>https://landchad.net/</a>
-    <span class=bl>The "Chad's Guide to Starting Your Own Website". Used to start this very
-    website! Although now it's hosted using Github Pages.</span>
+Chad's Guide : https://landchad.net/
+    The "Chad's Guide to Starting Your Own Website". Used to start this very
+    website! Although now it's hosted using Github Pages.
 
-<span class=cy>Vimm's Lair</span> : <a href=https://vimm.net/>https://vimm.net/</a>
-    <span class=bl>An excellent source of retro games and the emulators needed to play them.</span>
+Vimm's Lair : https://vimm.net/
+    An excellent source of retro games and the emulators needed to play them.
 
-<span class=cy>MetaMath Proof Explorer</span> : <a href=https://us.metamath.org/mpeuni/mmset.html>https://us.metamath.org/mpeuni/mmset.html</a>
-    <span class=bl>A collection of incredibly rigerous, computer verified mathematical proofs
+MetaMath Proof Explorer : https://us.metamath.org/mpeuni/mmset.html
+    A collection of incredibly rigerous, computer verified mathematical proofs
     for thousands of theorems in maths and logic. I personally love this
     website to death, but I doubt you will. Either way, it's here for those
-    of you who appreciate knoledge at it's purest.</span>
+    of you who appreciate knoledge at it's purest.
 
-<span class=cy>W3Schools</span> : <a href=https://www.w3schools.com/>https://www.w3schools.com/</a>
-    <span class=bl>A fantastic resource/reference for coding including HTML, CSS, JavaScript,
+W3Schools : https://www.w3schools.com/
+    A fantastic resource/reference for coding including HTML, CSS, JavaScript,
     Python, Java, etc... I personally use it to remember how to declare a
-    variable every time I go back to a language I haven't used in a while.</span>
+    variable every time I go back to a language I haven't used in a while.
 
-<span class=cy>NAND 2 Tetris</span> : <a href=https://www.nand2tetris.org/>https://www.nand2tetris.org/</a>
-    <span class=bl>The website hositng a course where you build a basic computer from a single
+NAND 2 Tetris : https://www.nand2tetris.org/
+    The website hositng a course where you build a basic computer from a single
     logic gate! A good starting place if you want to have a deep understanding
-    of how computers are put together.</span>
+    of how computers are put together.
 
-<span id=003>[<a href=#000>003</a>]</span> <span class=ma>Projects</span>
+[003] Projects
 ================================================================================
-</pre></div><div class=code><pre>
+
 fn main() {
     println!("Hello, world!");
 }
-</pre></div><div><pre>
-<span id=004>[<a href=#000>004</a>]</span> <span class=ma>Banners</span>
+
+[004] Banners
 ================================================================================
 
-<a href=https://sadgrl.online/><img alt="sadgrl.online banner" src=https://sadgrl.online/images/homepage/button-new.gif></a> <a href=https://landchad.net/><img alt="landchad.net banner" src=https://landchad.net/pix/landchad.gif></a>
+ 
 
 +------------------------------------------------------------------------------+
-| Published under the <a href=LICENSE>MIT License</a>, feel free to take what you like and make    |
+| Published under the MIT License, feel free to take what you like and make    |
 | cool things yourself! Of course, if you do take anything from this site or   | 
 | get heavy inspiration from it, any kind of credit would be cool of you.      |
 |                                                                              | 
@@ -117,6 +106,3 @@ fn main() {
 |   Dedicated to all human beings.                                             |
 |       -- Thom Yorke                                                          |
 +------------------------------------------------------------------------------+
-</pre></div></body>
-
-</html>

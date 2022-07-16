@@ -4,8 +4,8 @@
 }
 
 body {
-    background-color: #121212;
-    color: #fdfdfd;
+    background-color: #131411;
+    color: #F9F8F5;
     font-family: IBMPlexMono, monospace;
     font-size: 1em;
 }
@@ -13,6 +13,7 @@ body {
 div {
     width: 48em;
     margin: auto;
+    padding: 1em;
 }
 
 pre {
@@ -20,7 +21,7 @@ pre {
     font-family: IBMPlexMono, monospace;
 }
 
-a {
+a, .pr {
     color: #ae81ff;
 }
 
@@ -28,18 +29,34 @@ a:hover {
     color: #8160be;
 }
 
-.or {
-    color: #ff981f;
-}
-
-.gr {
-    color: #9d9d9d;
+.bl {
+    color: #75715e;
 }
 
 .ma {
     color: #ff005d;
 }
 
+.or {
+    color: #ff981f;
+}
+
+.ye {
+    color: #f4bf75;
+}
+
+.gr {
+    color: #a6e22e;
+}
+
 .cy {
     color: #4fe5ff;
+}
+
+.code {
+     background-color: #272822;
+}
+
+.bold {
+    font-weight: bold;
 }
