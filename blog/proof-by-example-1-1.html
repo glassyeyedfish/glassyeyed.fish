@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+
+    <title>Proof Writing</title>
+    <meta charset="UTF-8">
+    <link href="../styles/dark.css" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        table, tr, td {
+            table-layout: fixed;
+            margin: auto;
+            border-collapse: collapse;
+            border: 2px solid #ddddde;
+        }
+
+        td {
+            padding: 3px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body class="light-theme || dark-theme">
+
+    \[
+    \newcommand{\NN}{\mathbb{N}}
+    \newcommand{\ZZ}{\mathbb{Z}}
+    \newcommand{\QQ}{\mathbb{Q}}
+    \newcommand{\RR}{\mathbb{R}}
+    \newcommand{\CC}{\mathbb{C}}
+    
+    \newcommand{\lra}{\longrightarrow}
+    \newcommand{\ra}{\rightarrow}
+    \newcommand{\la}{\leftrightarrow}
+    \]
+
+    <img src="../assets/gef.png" alt="Logo, a grayscale illustration of a fish" width=200 class="pic">
+
+    <h1>Proofs by Example: Example 1.1</h1>
+
+    <p>In this series of articles the goal is simple. Teach you how to write
+        math proofs using only a series of examples. This is because I think 
+        understanding examples and then practicinig exercieses are the best 
+        way to learn math (and anything really).
+    </p>
+
+    <p>Let's not was time and get into the first example.</p>
+
+    <h2>Example 1</h2>
+
+    <p>Problem:</p>
+
+    <div class="aside">Prove that: For all \(n \in \ZZ\), if \(n\) is even, 
+        then \(n^2\) is even.
+    </div>
+
+    <p>Solution:</p>
+
+    <div class="aside">
+        Fix \(n \in \ZZ\). 
+        Assume \(n\) is even. 
+        By definition, this means that 
+        there exists \(k \in \ZZ\) such that \(n = 2k\). 
+        Using some algebra, we see that \( n^2 = (2k)^2 = 2(2k^2) \). 
+        I'll choose \( l = 2k^2 \). 
+        Thus, by substitution, \( n^2 = 2l \). 
+        By closure, we see that \( l \in \ZZ \). 
+        By existential introuction, we know that there exists \( l \in \ZZ \) such that \( n^2 = 2l \).
+        By definition, that means \(n^2\) is even. 
+        By direct proof we obtain that if \(n\) is even, then \(n^2\) is even.
+        By universal introduction, we conclude that for all \(n \in \NN\), if \(n\) is even, then \(n^2\) is even.
+    </div>
+
+    <p>There is a lot to unpack here. For starters, if you didn't already 
+        know, this is the definition of an even numbers.
+    </p>
+
+    <div class="aside"><b>Definition:</b> For all \(n \in \ZZ\), if \(n\) is even
+        iff there exists \(k \in \ZZ\) such that \(n = 2k\).
+    </div>
+
+    <p>Go back and read the proof again. Can you find the two places we use the 
+        definition of an even number? Just to make it clear, I will now show
+        the proof again but with some highlights.
+    </p>
+
+    <div class="aside">
+        Fix \(n \in \ZZ\). 
+        <span class="bl">Assume \(n\) is even.</span> 
+        <span class="pu">By definition</span>, this means that 
+        <span class="gr">there exists \(k \in \ZZ\) such that \(n = 2k\)</span>. 
+        Using some algebra, we see that \( n^2 = (2k)^2 = 2(2k^2) \). 
+        I'll choose \( l = 2k^2 \). 
+        Thus, by substitution, \( n^2 = 2l \). 
+        By closure, we see that \( l \in \ZZ \). 
+        By existential introuction, we know that <span class="bl">there exists \( l \in \ZZ \) such that \( n^2 = 2l \).</span>
+        <span class="pu">By definition</span>, that means <span class="gr">\(n^2\) is even.</span> 
+        By direct proof we obtain that if \(n\) is even, then \(n^2\) is even.
+        By universal introduction, we conclude that for all \(n \in \NN\), if \(n\) is even, then \(n^2\) is even.
+    </div>
+
+    <p>You'll that I have three colored highlights now. They all mean something specific!</p>
+
+    <ul>
+        <li>A <span class="gr">green statement</span> is is a statement we have proven in the middle of our proof.</li>
+        <li>A <span class="bl">blue stateemnt</span> is a statement that a <span class="green">green statement</span> follows from.</li>
+        <li>A <span class="pu">purple statement</span> is the justification for why a <span class="gr">green statement</span>
+        follows from zero or more <span class="bl">blue statements</span>.</li>
+    </ul>
+
+    <p>THIS IS VERY IMPORTANT! In every proof, pretty much every statement FOLLOWS from previous statements, and there 
+        is some JUSTIFICATION for why that is true. You should be able to analyze any proof and figure out what statements 
+        follow from what other statements and why.
+    </p>
+
+    <p>The only exceptions are statements that we have declared to be true. In these articles, I will sometimes highlight them 
+        in <span class="or">orange</span>. In our first example proof, here are the statements that have been declared instead 
+        of derived.
+    </p>
+
+    <div class="aside">
+        <span class="or">Fix \(n \in \ZZ\).</span>
+        <span class="or">Assume \(n\) is even.</span>
+        By definition, this means that 
+        there exists \(k \in \ZZ\) such that \(n = 2k\). 
+        Using some algebra, we see that \( n^2 = (2k)^2 = 2(2k^2) \). 
+        <span class="or">I'll choose \( l = 2k^2 \).</span>
+        Thus, by substitution, \( n^2 = 2l \). 
+        By closure, we see that \( l \in \ZZ \). 
+        By existential introuction, we know that there exists \( l \in \ZZ \) such that \( n^2 = 2l \).
+        By definition, that means \(n^2\) is even. 
+        By direct proof we obtain that if \(n\) is even, then \(n^2\) is even.
+        By universal introduction, we conclude that for all \(n \in \NN\), if \(n\) is even, then \(n^2\) is even.
+    </div>
+
+    <p style="font-style: italic;">Page last updated on Monday 10th, April, 2022.</p>
+
+</body>
+
+</html>
