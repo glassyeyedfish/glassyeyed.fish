@@ -6,7 +6,7 @@ body {
     font-family: sans-serif;
 
     padding: 1em;
-    max-width: 42em;
+    max-width: 65em;
     margin: auto;
 }
 
@@ -35,15 +35,15 @@ a:hover {
 }
 
 .box {
-    padding: 10px;
+    padding: 13px;
     background-color: #232222;
-    border: 3px solid #ddddde;
+    border: 2px solid #ddddde;
 }
 
 .important {
-    padding: 10px;
+    padding: 13px;
     background-color: #232222;
-    border: 3px solid #ef667b;
+    border: 2px solid #ef667b;
 }
 
 .re {

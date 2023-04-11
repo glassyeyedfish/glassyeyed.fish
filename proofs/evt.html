@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+
+    <title>Proof Writing</title>
+    <meta charset="UTF-8">
+    <link href="../styles/dark.css" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+
+    <div hidden="true">
+    \[
+    \newcommand{\NN}{\mathbb{N}}
+    \newcommand{\ZZ}{\mathbb{Z}}
+    \newcommand{\QQ}{\mathbb{Q}}
+    \newcommand{\RR}{\mathbb{R}}
+    \newcommand{\CC}{\mathbb{C}}
+    
+    \newcommand{\lra}{\longrightarrow}
+    \newcommand{\ra}{\rightarrow}
+    \newcommand{\la}{\leftrightarrow}
+    \]
+    </div>
+
+    <img src="../assets/gef.png" alt="Logo, a grayscale illustration of a fish" width=200 class="pic">
+
+    <h1>Extreme Value Theorem (Maximum)</h1>
+
+    <div class="important">
+        <b>Theorem:</b> The Extreme Value Theorem (Maximum)
+        <br><br>
+        If \(K \subseteq \RR\), \(K\) is compact, \(f : K \lra \RR\), and 
+        \(f\) is continuous on \(K\), there exists \(b \in K\) such that, 
+        for all \(x \in K\), \(f(x) \leq f(b)\).
+    </div>
+
+    <p>We rely on the following:</p>
+
+    <div class="box">
+        <b>Lemma:</b> Image is a Subset of the Codomain
+        <br><br>
+        If \(f : A \lra B\) and \(K \subseteq A\), then \(f(K) \subseteq B\).
+    </div>
+
+    <br>
+
+    <div class="box">
+        <b>Lemma:</b> Function is Onto its Image
+        <br><br>
+        If \(f : A \lra B\), \(K \subseteq A\), and \(y \in f(K)\), then there 
+        exists \(x \in K\) such that \(f(x) = y\).
+    </div>
+
+    <br>
+
+    <div class="box">
+        <b>Lemma:</b> Preservation of Compact Sets
+        <br><br>
+        If \(A \subseteq \RR\), \(f : A \lra \RR\), \(f\) is continuous on \(K\),
+        \(K \subseteq A\), 
+        and \(K\) is compact, then \(f(K)\) is compact.
+    </div>
+
+    <br>
+
+    <div class="box">
+        <b>Lemma:</b> Max of a Compact Set
+        <br><br>
+        If \(K \subseteq \RR\) and \(K\) is compact, then there exists 
+        \(b \in K\) such that for all \(x \in K\), \(x \leq b\).
+    </div>
+
+    <p><em>Proof:</em></p>
+
+    <div class="aside">
+        <ol>
+            <li>Assume \(K \subseteq \RR\), \(K\) is compact, \(f : K \lra \RR\), and \(f\) is continuous on \(K\).</li>
+            <li>By Preservation of Compact Sets, \(f(K)\) is compact.</li>
+            <li>By Max of a Compact Set, I choose \(\beta \in f(K)\), such that for all \(y \in f(K)\), \(y \leq \beta\).</li>
+            <li>Fix \(x \in K\).</li>
+            <li>By Definition of Image, \(f(x) \in f(K)\)</li>
+            <li>By Specification, \(f(x) \leq \beta\)</li>
+            <li>By Function Onto its Image, I choose \(b \in K\), such that \(f(b) = \beta\).</li>
+            <li>By Substitution, \(f(x) \leq f(b)\)</li>
+            <li>By Generalization, for all \(x \in K\), \(f(x) \leq f(b)\).</li>
+            <li>By Existence, there exists \(b \in K\) such that, for all \(x \in K\), \(f(x) \leq f(b)\).</li>
+            <li>By direct proof, the theorem is proven.</li>
+        </ol>
+    </div>
+
+    <p style="font-style: italic;">Page last updated on the 11th of April, 2022.</p>
+
+</body>
+
+</html>

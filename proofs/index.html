@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+
+    <title>Proof Writing</title>
+    <meta charset="UTF-8">
+    <link href="../styles/dark.css" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+
+    <div hidden="true">
+    \[
+    \newcommand{\NN}{\mathbb{N}}
+    \newcommand{\ZZ}{\mathbb{Z}}
+    \newcommand{\QQ}{\mathbb{Q}}
+    \newcommand{\RR}{\mathbb{R}}
+    \newcommand{\CC}{\mathbb{C}}
+    
+    \newcommand{\lra}{\longrightarrow}
+    \newcommand{\ra}{\rightarrow}
+    \newcommand{\la}{\leftrightarrow}
+    \]
+    </div>
+
+    <img src="../assets/gef.png" alt="Logo, a grayscale illustration of a fish" width=200 class="pic">
+
+    <h1>William's Collection of Proofs</h1>
+
+    <h2>The Rules of Inference</h2>
+
+    <div class="box">
+        <b>The Rule of Deduction</b>
+        <br><br>
+        Given that:
+        <ul>
+            <li>A theorem, lemma, or definition of the form "If \(P\), then \(Q\)"
+                or "\(P\) iff \(Q\)" has already been proven.
+            </li>
+            <li>We have shown "\(P\)".</li>
+        </ul>
+        We can:
+        <ul>
+            <li>Deduce "\(Q\)".</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="box">
+        <b>The Rule of Direct Proof</b>
+        <br><br>
+        Given that:
+        <ul>
+            <li>Have assumed "\(P\)", beginning a sub-proof.</li>
+            <li>Have shown "\(Q\)" in side the same sub-proof.</li>
+        </ul>
+        We can:
+        <ul>
+            <li>Discharge our assumption of "\(P\)".</li>
+            <li>Deduce "If \(P\), then \(Q\)".</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="box">
+        <b>The Rule of Generalization</b>
+        <br><br>
+        Given that:
+        <ul>
+            <li>We have fixed \(x\) with some condition.</li>
+            <li>We have shown \(P(x)\).</li>
+            <li>There are no undischanrged assumptions about \(x\).</li>
+        </ul>
+        We can:
+        <ul>
+            <li>Deduce "For all \(x\) with the condition, \(P(x)\)".</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="box">
+        <b>The Rule of Specification</b>
+        <br><br>
+        Given that:
+        <ul>
+            <li>We have shown "For all \(x\) with some condition, \(P(x)\)".</li>
+            <li>We have shown \(y\) has the condition.</li>
+        </ul>
+        We can:
+        <ul>
+            <li>Deduce \(P(y)\).</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="box">
+        <b>The Rule of Choice</b>
+        <br><br>
+        Given that:
+        <ul>
+            <li>We have sown "There exists \(x\) with some condition, such that \(P(x)\)".</li>
+        </ul>
+        We can:
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+    <p style="font-style: italic;">Page last updated on the 11th of April, 2022.</p>
+
+</body>
+
+</html>
