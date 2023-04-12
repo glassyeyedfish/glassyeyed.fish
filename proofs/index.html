@@ -36,18 +36,16 @@
     <h2>The Rules of Inference</h2>
 
     <div class="box">
-        <b>The Rule of Deduction</b>
+        <b>Deduction</b>
         <br><br>
-        Given that:
+        Prerequisites:
         <ul>
-            <li>A theorem, lemma, or definition of the form "If \(P\), then \(Q\)"
-                or "\(P\) iff \(Q\)" has already been proven.
-            </li>
-            <li>We have shown "\(P\)".</li>
+            <li>if \(P\), then \(Q\) OR \(P\) iff \(Q\)</li>
+            <li>\(P\)</li>
         </ul>
-        We can:
+        Result:
         <ul>
-            <li>Deduce "\(Q\)".</li>
+            <li>\(Q\)</li>
         </ul>
     </div>
 
@@ -56,15 +54,14 @@
     <div class="box">
         <b>The Rule of Direct Proof</b>
         <br><br>
-        Given that:
+        Prerequisites:
         <ul>
-            <li>Have assumed "\(P\)", beginning a sub-proof.</li>
-            <li>Have shown "\(Q\)" in side the same sub-proof.</li>
+            <li>A subproof from \(P\) to \(Q\)</li>
         </ul>
         We can:
         <ul>
-            <li>Discharge our assumption of "\(P\)".</li>
-            <li>Deduce "If \(P\), then \(Q\)".</li>
+            <li>Discharge \(P\)</li>
+            <li>If \(P\), then \(Q\)</li>
         </ul>
     </div>
 
