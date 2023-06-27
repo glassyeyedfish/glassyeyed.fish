@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 html {
-    background-image: url("../assets/background.png");
-    background-repeat: repeat;
-    background-attachment: fixed;
+    background-color: #04020c;
 }
 
 body {
@@ -23,15 +21,16 @@ body {
 }
 
 body.light-theme {
-    --txt-color: #212121;
-    --bkg-color: #fefefe;
-    --lnk-color: #4c2a87;
+    --txt-color: #ffffff;
+    --bkg-color: #000000;
+    --lnk-color: #cfb4ff;
 }
 
 div {
     border-radius: 15px;
     border-width: 5px;
     border-style: solid;
+    border-color: var(--txt-color);
     background-color: var(--bkg-color);
 
     padding: 15px;
@@ -126,4 +125,11 @@ a:hover {
 
 .bor {
     border-color: #ffc257
+}
+
+#logo-pallette {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
