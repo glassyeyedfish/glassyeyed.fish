@@ -1,13 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+html {
+    background-image: url("../assets/background.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
 body {
-    background-color: #121111;
-    color: #ddddde;
+    --txt-color: #efefef;
+    --bkg-color: #111111;
+    --lnk-color: #cfb4ff;
+
+    background: transparent;
+    color: var(--txt-color);
 
     line-height: 1.6;
-    font-family: sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
 
     padding: 1em;
     max-width: 50em;
     margin: auto;
+}
+
+body.light-theme {
+    --txt-color: #212121;
+    --bkg-color: #fefefe;
+    --lnk-color: #4c2a87;
+}
+
+div {
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    background-color: var(--bkg-color);
+
+    padding: 15px;
+    margin: 15px;
 }
 
 h1 {
@@ -15,26 +43,32 @@ h1 {
 }
 
 a {
-    color: #ae81ff;
+    color: var(--lnk-color);
 }
 
 a:hover {
-    color: #c6a8ff;
     font-style: italic;
 }
 
 .pic {
+    border-radius: 1000px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #b48bff;
+
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .aside {
+    border-radius: 0px;
     padding: 10px;
     background-color: #232222;
 }
 
 .box {
+    border-radius: 0px;
     padding: 13px;
     background-color: #232222;
     border: 2px solid #ddddde;
@@ -68,4 +102,28 @@ a:hover {
 
 .or {
     color: #ffc257
+}
+
+.bre {
+    border-color: #ef667b;
+}
+
+.bbl {
+    border-color: #66d9ef;
+}
+
+.bgr {
+    border-color: #90ff75;
+}
+
+.bye {
+    border-color: #fffd72;
+}
+
+.bpu {
+    border-color: #b48bff;
+}
+
+.bor {
+    border-color: #ffc257
 }

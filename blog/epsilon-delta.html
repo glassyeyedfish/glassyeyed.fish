@@ -26,231 +26,58 @@
     \newcommand{\ra}{\rightarrow}
     \]
 
-    <img src="../assets/gef.png" alt="Logo, a grayscale illustration of a fish" width=200 class="pic">
+    <div class="bpu">
+        <img src="../assets/gef.png" alt="Logo, a grayscale illustration of a fish" width=200 class="pic">
 
-    <h1>Some Example Epsilon-Delta Proofs</h1>
-
-    <h2>The Epsilon-Delta Definition of a Limit</h2>
-
-    <p>For these examples, given some set \(A \subseteq \RR\) which acts as the 
-        domain of a function \(f : A \lra \RR\) we define:
-    </p>
-
-    <p>\[ \lim_{x \ra a} f(x) = L\]</p>
-
-    <p>To mean:</p>
-
-    <p>For all \( \epsilon > 0 \), there exists some \( \delta > 0 \) such 
-        that for every \(x \in A \) if \( 0 < |x - a| < \delta \), 
-        then \( | f(x) - L | < \epsilon \).
-    </p>
-
-    <hr>
-
-    <h2>Example 0</h2>
-
-    <p>Show that:</p>
-
-    <p>\[ \lim_{x \ra a} f(x) = L \]</p>
-
-    <p>Proof:</p>
-
-    <ol>
-        <li>I fix some arbitrary \(\epsilon > 0\)</li>
-        <li>I choose \(\delta = \:???\)</li>
-        <li>I show that \(\delta > 0\)</li>
-        <li>I fix some arbitraty \(x \in A\)</li>
-        <li>I assume that \(0 < |x-a|<\delta\)</li>
-        <li>I prove that \(|f(x)-L|<\epsilon\)</li>
-        <li>I conclude that the proof is complete.</li>
-    </ol>
-
-    <p>This is the general structure of an epsilon-delta proof. Each step 
-        corresponsed to a portion of the definition. If you can't see why each 
-        step of the general solution is nessecary, then you will have to review
-        the basics of writing proofs, and especially how to use quantifiers.
-    </p>
-
-    <p>It's worth mentioning that in the literature, typically Step 3 and 4
-        aren't explicitly stated because they are either obvious or not 
-        seen as nessecary. However, for a complete argument I believe that 
-        they are technically nessecary, and so I will include them in all of
-        my own example proofs.
-    </p>
-
-    <hr>
-
-    <h2>Example 1</h2>
-
-    <p>Show that:</p>
-
-    <p>\[ \lim_{x \ra 1} x + 1 = 2 \]</p>
-
-    <p>Proof:</p>
-
-    <ol>
-        <li>I fix some arbitrary \(\epsilon > 0\)</li>
-        <li>I choose \(\delta = \epsilon\)</li>
-        <li>Because of (1) and (2), it's true that 
-            \(\delta > 0\)</li>
-        <li>I fix some arbitraty \(x \in \RR\)</li>
-        <li>I assume that \(0 < |x-1|<\delta\)</li>
-        <li>Because of (2) and (5), it's true that
-            \(|x-1|<\epsilon\)
-        </li>
-        <li>Thus \(|(x + 1) - 2| < \epsilon\)</li>
-        <li>I conclude that the proof is complete.</li>
-    </ol>
-
-    Here, you'll notice I mentioned the lines used to justify certain steps 
-    right in the proof. This level of detail is usually not nessecary when 
-    writing a math proof. But, because this is meant to help you understand 
-    the proofs, I will avoid skipping steps as much as I can.
-
-    <h3>Exercises</h3>
-
-    Prove the following:
-
-    <ol>
-        <li>\(\lim_{x \ra 2} x = 2\)</li>
-        <li>For all \(b \in \RR\), \(\lim_{x \ra b} x = b\) 
-            (How do correctly deal with the extra quantifier?)
-        </li>
-    </ol>
-
-    <hr>
-
-    <h2>Example 2</h2>
-
-    <p>Show that:</p>
-
-    <p>\[ \lim_{x \ra 0} x^2 = 0 \]</p>
-
-    <p>Proof:</p>
-
-    <ol>
-        <li>I fix some arbitrary \(\epsilon > 0\)</li>
-        <li>I choose \(\delta = \sqrt{\epsilon}\)</li>
-        <li>Because of (1) and (2), it's true that 
-            \(\delta > 0\)</li>
-        <li>I fix some arbitraty \(x \in \RR\)</li>
-        <li>I assume that \(0 < |x-0|<\delta\)</li>
-        <li>Because of (2) and (5), it's true that
-            \(|x-0| < \sqrt{\epsilon}\)
-        </li>
-        <li>Thus \( |x| < \sqrt{\epsilon}\)</li>
-        <li>Thus \(|x|^2 < \left( \sqrt{\epsilon} \right)^2 \)</li>
-        <li>Thus \( |x^2| < \epsilon \)</li>
-        <li>Thus \( |x^2 - 0| < \epsilon \)</li>
-        <li>I conclude that the proof is complete.</li>
-    </ol>
-
-    <p>At this point, I want to talk about how we choose \(\delta\) in step 2 
-        of the proof. Typically, we do this by doing the proof in reverse as 
-        rough. I will now show how that's done for this proof.
-    </p>
-
-    <p>Rough Work:</p>
-
-    <ul>
-        <li>\( |x^2 - 0| < \epsilon \)</li>
-        <li>\( |x^2| < \epsilon \)</li>
-        <li>\( |x|^2 < \epsilon \)</li>
-        <li>\( \sqrt{|x|^2} < \sqrt{\epsilon} \)</li>
-        <li>\( |x| < \sqrt{\epsilon} \)</li>
-        <li>\( |x - 0| < \sqrt{\epsilon} \)</li>
-    </ul>
-
-    From now on, I will put the rough work before the proof to show the full 
-    work that goes into epsilon-delta proofs.
-
-    <h3>Exercises</h3>
+        <h1>An Epsilon-Delta Proof</h1>
     
-    <ol>
-        <li>Do the rough work for <b>Example 1</b>.</li>
-    </ol>
+        <p>In which William spends way too much time talking about something 
+            he spends way too much time thinking about.
+        </p>
 
-    <hr>
+        <p>
+            <a href="../index.html">Home</a> > <a href="epsilon-delta.html">An Epsilon-Delta Proof</a>
+        </p>
+    </div>
 
-    <h2>Example 3</h2>
+    <div class="bgr">
+        <p>In this short article, my goal is to present a fairly simple epsilon-delta proof and then
+            break it down in as much detail as possible. My hope is to give readers an insight into 
+            exactly what goes into mathematical thinking. By having a deep understanding of each step,
+            I hope the reader can construct their own epsilon-delta proofs with confidence that they 
+            are correct and make sense.
+        </p>
 
-    <p>Show that:</p>
+        <p>I have chosen to prove the following. 
+            (Assume every variable is a real number unless otherwise specified.)
+        </p>
 
-    <p>\[ \lim_{x \ra 3} x^2 - 9 = 0 \]</p>
+        <div class="box">
+            <b>Theorem</b><br>
+            <p>Given any functions \(f : \RR \lra \RR\) and \(g : \RR \lra \RR\). 
+                If \(\lim_{x \ra a} f(x) = L\) and \(\lim_{x \ra a} g(x) = M\),
+                then \(\lim_{x \ra a} f(x) + g(x) = L + M\).</p>
+        </div>
 
-    <p>Rough Work:</p>
+        <p>This is a pretty simple result, but because it's a general result about 
+            any two functions, it will make for a more interesting and difficult proof.
+            To begin, I will present the proof in full.
+        </p>
 
-    <ul>
-        <li>\( |x^2 - 9| < \epsilon \)</li>
-        <li>\( |x + 3| |x - 3| < \epsilon \)</li>
-    </ul>
-    
-    The strategy here is to split the inequality into two as follows:
+        <div class="box">
+            <em>Proof</em><br>
+            <p></p>
+        </div>
+    </div>
 
-    <ul>
-        <li>\( |x + 3| |x - 3| < C \frac{\epsilon}{C} \)</li>
-        <li>\( |x - 3| < \frac{\epsilon}{C} \)</li>
-        <li>\( |x + 3| < C \)</li>
-    </ul>
 
-    Now we just have to figure out a suitable choice for \(C\). We do this 
-    by making sure that \(\delta \leq 1\). This allows us to do the following.
+    <div class="bbl">
+        <br>
+        <a href=https://sadgrl.online><img alt="sadgrl.online banner" src=https://sadgrl.online/images/homepage/button-new.gif></a>
+        <a href=https://landchad.net><img alt="landchad.net banner" src=https://landchad.net/pix/landchad.gif></a>
 
-    <ul>
-        <li>\( |x-3| < 1 \)</li>
-        <li>\( -1< x-3 < 1 \)</li>
-        <li>\( 2 < x < 4 \)</li>
-        <li>\( 5 < x + 3 < 7 \)</li>
-        <li>\( -7 < 5 < x + 3 < 7 \)</li>
-        <li>\( |x + 3| < 7 \)</li>
-    </ul>
-    
-    From here it's clear that we should choose \(C = 7\). By reading the 
-    proof you can understand why what we did will end up working.
-
-    <p>Proof:</p>
-
-    <ol>
-        <li>I fix some arbitrary \(\epsilon > 0\)</li>
-        <li>I choose \(\delta = \min\{1, \frac{\epsilon}{7}\}\)</li>
-        <li>Because of (1) and (2), it's true that 
-            \(\delta > 0\)</li>
-        <li>I fix some arbitraty \(x \in \RR\)</li>
-        <li>I assume that \(0 < |x-3|<\delta\)</li>
-        <li>Because of (2), it's true that
-            \(\delta \leq \frac{\epsilon}{7}\)</li>
-        </li>
-        <li>Because of (5) and (6), it's true that 
-            \(|x-3|<\frac{\epsilon}{7}\)
-        </li>
-        <li>Because of (2), it's true that
-            \(\delta \leq 1\)
-        </li>
-        <li>Because of (5) and (8), it's true that
-            \(|x-3| < 1\)
-        </li>
-        <li>Thus \(-1 < x-3 < 1\)</li>
-        <li>Thus \(2 < x < 4\)</li>
-        <li>Thus \( 5 < x + 3 < 7\)</li>
-        <li>Thus \( -7 < x + 3 < 7\)</li>
-        <li>Thus \( |x + 3| < 7\)</li>
-        </li>
-        <li>Because of (7) and (13), it's true that
-            \(|x+3||x-3| < 7\frac{\epsilon}{7}\)
-        </li>
-        <li>Thus \(|x^2-9| < \epsilon\)</li>
-        <li>I conclude that the proof is complete.</li>
-    </ol>
-
-    <h3>Exercises</h3>
-
-    <ol>
-        <li>Prove that \( \lim_{x \ra 2} x^2 - 4 = 0 \)</li>
-        <li>Find a different value of \(C\) you can use to prove <b>Example 3</b>.</li>
-        <li>Prove that \( \lim_{x \ra 2} x^2 - 3 = 1 \)</li>
-    </ol>
-
-    <p style="font-style: italic;">Page last updated on Sunday 9th, April, 2022.</p>
+        <p style="font-style: italic;">Page last updated on Tuesday 27th, June, 2023.</p>
+    </div>
 
 </body>
 

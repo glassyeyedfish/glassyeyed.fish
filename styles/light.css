@@ -1,26 +1,119 @@
-body {
-    background-color: #eeeeee;
-    color: #222222;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
-    font-family: sans-serif;
+html {
+    background-image: url("../assets/background.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body {
+    background: transparent;
+    color: #111111;
+
     line-height: 1.6;
+    font-family: 'IBM Plex Mono', monospace;
 
     padding: 1em;
-    max-width: 42em;
+    max-width: 50em;
     margin: auto;
 }
 
+div {
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #fefefe;
+
+    padding: 15px;
+    margin: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
 a {
-    color: #8441ff;
+    color: #4c2a87;
 }
 
 a:hover {
-    color: #6c1dff;
     font-style: italic;
 }
 
 .pic {
+    border-radius: 1000px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #b48bff;
+
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.aside {
+    border-radius: 0px;
+    padding: 10px;
+    background-color: #232222;
+}
+
+.box {
+    border-radius: 0px;
+    padding: 13px;
+    background-color: #232222;
+    border: 2px solid #ddddde;
+}
+
+.important {
+    padding: 13px;
+    background-color: #232222;
+    border: 2px solid #ef667b;
+}
+
+.re {
+    color: #ef667b;
+}
+
+.bl {
+    color: #66d9ef;
+}
+
+.gr {
+    color: #90ff75;
+}
+
+.ye {
+    color: #fffd72;
+}
+
+.pu {
+    border-color: #b48bff;
+}
+
+.or {
+    border-color: #ffc257
+}
+
+.bre {
+    border-color: #ef667b;
+}
+
+.bbl {
+    border-color: #66d9ef;
+}
+
+.bgr {
+    border-color: #90ff75;
+}
+
+.bye {
+    border-color: #fffd72;
+}
+
+.bpu {
+    border-color: #b48bff;
+}
+
+.bor {
+    border-color: #ffc257
 }
