@@ -12,8 +12,9 @@ body {
     background: transparent;
     color: var(--txt-color);
 
-    line-height: 1.6;
     font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2em;
+    line-height: 1.6;
 
     padding: 1em;
     max-width: 50em;
@@ -78,6 +79,7 @@ a:hover {
 }
 
 .important {
+    border-radius: 0px;
     padding: 13px;
     background-color: #232222;
     border: 2px solid #ef667b;

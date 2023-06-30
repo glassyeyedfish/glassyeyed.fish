@@ -4,16 +4,16 @@
 
 <head>
 
-    <title>Example Proofs</title>
+    <title>An Epsilon-Delta Proof</title>
     <meta charset="UTF-8">
-    <link href="../styles/dark.css" rel="stylesheet">
+    <link href="../styles/gef.css" rel="stylesheet">
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </head>
 
-<body class="light-theme || dark-theme">
+<body>
 
     \[
     \newcommand{\NN}{\mathbb{N}}
@@ -27,54 +27,80 @@
     \]
 
     <div class="bpu">
-        <img src="../assets/gef.png" alt="Logo, a grayscale illustration of a fish" width=200 class="pic">
-
-        <h1>An Epsilon-Delta Proof</h1>
+        <h1>An Epsilon Delta Proof</h1><br>
     
-        <p>In which William spends way too much time talking about something 
-            he spends way too much time thinking about.
-        </p>
-
-        <p>
-            <a href="../index.html">Home</a> > <a href="epsilon-delta.html">An Epsilon-Delta Proof</a>
-        </p>
+        <p>In which William goes to great lengths to explain a single proof.</p>
     </div>
 
     <div class="bgr">
+        <h2>Introduction</h2><br>
+
         <p>In this short article, my goal is to present a fairly simple epsilon-delta proof and then
             break it down in as much detail as possible. My hope is to give readers an insight into 
             exactly what goes into mathematical thinking. By having a deep understanding of each step,
             I hope the reader can construct their own epsilon-delta proofs with confidence that they 
             are correct and make sense.
-        </p>
+        </p><br>
 
         <p>I have chosen to prove the following. 
             (Assume every variable is a real number unless otherwise specified.)
-        </p>
+        </p><br>
 
-        <div class="box">
+        <div class="important">
             <b>Theorem</b><br>
             <p>Given any functions \(f : \RR \lra \RR\) and \(g : \RR \lra \RR\). 
                 If \(\lim_{x \ra a} f(x) = L\) and \(\lim_{x \ra a} g(x) = M\),
                 then \(\lim_{x \ra a} f(x) + g(x) = L + M\).</p>
-        </div>
+        </div><br>
 
         <p>This is a pretty simple result, but because it's a general result about 
             any two functions, it will make for a more interesting and difficult proof.
             To begin, I will present the proof in full.
-        </p>
+        </p><br>
 
         <div class="box">
             <em>Proof</em><br>
-            <p></p>
+            <p>Let \(f : \RR \lra \RR\) and \(g : \RR \lra \RR\). Now assume 
+                \(\lim_{x \ra a} f(x) = L\) and \(\lim_{x \ra a} g(x) = M\).
+                By definition, this means that for every there exists a 
+                \(\delta_1 &gt; 0 \) such that for each 
+                \(x \in \RR\) if \(0 &lt; | x - a | &lt; \delta_1 \), then 
+                \(|f(x) - L| &lt; \frac{\epsilon}{2} \). Also, there exists a 
+                \(\delta_2 &gt; 0 \) such that for each 
+                \(x \in \RR\) if \(0 &lt; | x - a | &lt; \delta_2 \), then 
+                \(|g(x) - M| &lt; \frac{\epsilon}{2} \). I now choose 
+                \(\delta = \min(\delta_1, \delta_2)\) and assume 
+                \(0 &lt; |x - a| &lt; \delta\). This means 
+                \(|f(x) - L| &lt; \frac{\epsilon}{2} \) and
+                \(|g(x) - M| &lt; \frac{\epsilon}{2} \). So it follows that
+                \[ 
+                | (f(x) + g(x)) - (L + M) | \leq |f(x) - L| + |g(x) - M| &lt; 
+                \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon
+                \]
+                as required.
+            </p>
+        </div><br>
+
+        To begin our examination, let's start by understanding the epsilon-delta 
+        definition of a limit.
+    </div>
+
+    <div class="bye">
+        <h2>Definition of a Limit</h2><br>
+
+        <p>The epsilon-delta definition of a limit is as follows.</p><br>
+
+        <div class="important">
+            <b>Definition</b><br>
+            <p>Give some function \(f : \RR \lra \RR\). We say 
+                \(\lim_{x \ra a} f(x) = L\) iff 
+            </p>
         </div>
     </div>
 
-
     <div class="bbl">
-        <p style="font-style: italic;">Page last updated on Tuesday 27th, June, 2023.</p>
+        <p style="font-style: italic;">Page last updated on 2023/06/27</p>
     </div>
-
 </body>
 
 </html>
